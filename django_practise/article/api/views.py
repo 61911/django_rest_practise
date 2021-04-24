@@ -56,3 +56,6 @@ class ArticleGenericView(mixins.ListModelMixin, mixins.CreateModelMixin, generic
 class SingleArticleView(generics.RetrieveUpdateAPIView):
     queryset = Article.objects.all()
     serializer_class = ArticleSerializer
+
+def add(a, b):
+    return a + b
